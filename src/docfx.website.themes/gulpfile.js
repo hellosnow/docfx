@@ -87,8 +87,12 @@ var pack = {
         }
     ],
     "docs.html": [
-         {
+        {
             "files": "ManagedReference.html.primary.js",
+            "cwd": "default",
+        },
+        {
+            "files": "RestApi.html.primary.js",
             "cwd": "default",
         },
         {
