@@ -82,6 +82,10 @@ namespace Microsoft.DocAsCode.Build.RestApi.ViewModels
         [JsonProperty("children")]
         public List<RestApiItemViewModel> Children { get; set; }
 
+        [YamlMember(Alias = "tags")]
+        [JsonProperty("tags")]
+        public List<RestApiTagViewModel> Tags { get; set; }
+
         [ExtensibleMember]
         [JsonExtensionData]
         public Dictionary<string, object> Metadata { get; set; } = new Dictionary<string, object>();
@@ -98,8 +102,21 @@ namespace Microsoft.DocAsCode.Build.RestApi.ViewModels
                 Description = swagger.Description,
                 Summary = swagger.Summary,
                 Children = new List<RestApiItemViewModel>(),
-                Raw = swagger.Raw
+                Raw = swagger.Raw,
+                Tags = new List<RestApiTagViewModel>()
             };
+            if (swagger.Tags != null)
+            {
+                foreach (var tag in swagger.Tags)
+                {
+                    vm.Tags.Add(new RestApiTagViewModel
+                    {
+                        Name = tag.Name,
+                        Description = tag.Description,
+                        BookmarkId = tag.BookmarkId
+                    });
+                }
+            }
             foreach (var path in swagger.Paths)
             {
                 foreach (var op in path.Value)
