@@ -203,7 +203,7 @@ exports.transform = function (model) {
             obj.items['x-internal-loop-ref-name'] = obj.items['x-internal-loop-ref-name'] || null;
             obj.items = transformProperties(obj.items);
         }
-        return obj;
+        return transformProperties(obj);
     }
 
     function appendQueryParamsToPath(path, parameters) {
