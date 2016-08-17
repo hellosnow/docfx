@@ -1,13 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class CompositeYamlModelGenerator | docfx website</title>
+    <title>Class CompositeYamlModelGenerator
+   | DocFX website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class CompositeYamlModelGenerator | docfx website">
+    <meta name="title" content="Class CompositeYamlModelGenerator
+   | DocFX website ">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -15,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
   </head>
   <body data-spy="scroll" data-target="#affix">
     <div id="wrapper">
@@ -29,17 +33,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../">
+              <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container" id="breadcrumb">
+          <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
@@ -48,7 +57,15 @@
       </header>
       <div role="main" class="container body-content">
         
-        <div class="sidenav">
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
             <div id="sidetoc"></div>
@@ -59,15 +76,54 @@
             <article class="content wrap" id="_content">
               
               
-              <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L11" class="btn btn-primary pull-right mobile-hide">View Source</a>
-              <h1 id="Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator" data-uid="Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator">Class CompositeYamlModelGenerator</h1>
+              <h1 id="Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator" data-uid="Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator">Class CompositeYamlModelGenerator
+              </h1>
               <div class="markdown level0 summary"></div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
-                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><a class="xref" href="Microsoft.DocAsCode.EntityModel.YamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_YamlModelGenerator">YamlModelGenerator</a></div>
                   <div class="level2"><span class="xref">CompositeYamlModelGenerator</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="Microsoft.DocAsCode.EntityModel.YamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_YamlModelGenerator_GenerateNamedType_Microsoft_CodeAnalysis_INamedTypeSymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_">GenerateNamedType(INamedTypeSymbol, MetadataItem, SymbolVisitorAdapter)</a>
+                </div>
+                <div>
+                  <a class="xref" href="Microsoft.DocAsCode.EntityModel.YamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_YamlModelGenerator_GenerateMethod_Microsoft_CodeAnalysis_IMethodSymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_">GenerateMethod(IMethodSymbol, MetadataItem, SymbolVisitorAdapter)</a>
+                </div>
+                <div>
+                  <a class="xref" href="Microsoft.DocAsCode.EntityModel.YamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_YamlModelGenerator_GenerateField_Microsoft_CodeAnalysis_IFieldSymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_">GenerateField(IFieldSymbol, MetadataItem, SymbolVisitorAdapter)</a>
+                </div>
+                <div>
+                  <a class="xref" href="Microsoft.DocAsCode.EntityModel.YamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_YamlModelGenerator_GenerateEvent_Microsoft_CodeAnalysis_IEventSymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_">GenerateEvent(IEventSymbol, MetadataItem, SymbolVisitorAdapter)</a>
+                </div>
+                <div>
+                  <a class="xref" href="Microsoft.DocAsCode.EntityModel.YamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_YamlModelGenerator_GenerateProperty_Microsoft_CodeAnalysis_IPropertySymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_">GenerateProperty(IPropertySymbol, MetadataItem, SymbolVisitorAdapter)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">ToString()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Equals(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Equals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">ReferenceEquals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">GetHashCode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">GetType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">MemberwiseClone()</a>
+                </div>
               </div>
               <h6><strong>Namespace</strong>:Microsoft.DocAsCode.EntityModel</h6>
               <h6><strong>Assembly</strong>:Microsoft.DocAsCode.EntityModel.dll</h6>
@@ -75,10 +131,14 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public sealed class CompositeYamlModelGenerator : YamlModelGenerator</code></pre>
               </div>
-              <h3 id="constructors">Constructors</h3>
-              
+              <h3 id="constructors">Constructors
+              </h3>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L28">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator__ctor_Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator___.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.%23ctor(Microsoft.DocAsCode.EntityModel.SimpleYamlModelGenerator%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/dev/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L28">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator__ctor_Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator___" data-uid="Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.#ctor(Microsoft.DocAsCode.EntityModel.SimpleYamlModelGenerator[])">CompositeYamlModelGenerator(SimpleYamlModelGenerator[])</h4>
               <div class="markdown level1 summary"></div>
@@ -104,9 +164,12 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L15">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator__ctor_System_Collections_Generic_IEnumerable_Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator__.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.%23ctor(System.Collections.Generic.IEnumerable%7BMicrosoft.DocAsCode.EntityModel.SimpleYamlModelGenerator%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/dev/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L15">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator__ctor_System_Collections_Generic_IEnumerable_Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator__" data-uid="Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.#ctor(System.Collections.Generic.IEnumerable{Microsoft.DocAsCode.EntityModel.SimpleYamlModelGenerator})">CompositeYamlModelGenerator(IEnumerable&lt;SimpleYamlModelGenerator&gt;)</h4>
               <div class="markdown level1 summary"></div>
@@ -126,16 +189,20 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Microsoft.DocAsCode.EntityModel.SimpleYamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator">SimpleYamlModelGenerator</a>&gt;</td>
+                    <td><a class="xref" href="https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx">IEnumerable</a>&lt;<a class="xref" href="Microsoft.DocAsCode.EntityModel.SimpleYamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator">SimpleYamlModelGenerator</a>&gt;</td>
                     <td><em>generators</em></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
-              <h3 id="methods">Methods</h3>
-              
+              <h3 id="methods">Methods
+              </h3>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L33">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator_DefaultVisit_Microsoft_CodeAnalysis_ISymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.DefaultVisit(Microsoft.CodeAnalysis.ISymbol%2CMicrosoft.DocAsCode.EntityModel.MetadataItem%2CMicrosoft.DocAsCode.EntityModel.SymbolVisitorAdapter)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/dev/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L33">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator_DefaultVisit_Microsoft_CodeAnalysis_ISymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_" data-uid="Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.DefaultVisit(Microsoft.CodeAnalysis.ISymbol,Microsoft.DocAsCode.EntityModel.MetadataItem,Microsoft.DocAsCode.EntityModel.SymbolVisitorAdapter)">DefaultVisit(ISymbol, MetadataItem, SymbolVisitorAdapter)</h4>
               <div class="markdown level1 summary"></div>
@@ -171,10 +238,16 @@
                   </tr>
                 </tbody>
               </table>
-              <h3 id="operators">Operators</h3>
-              
+              <h5 class="overrides">Overrides</h5>
+              <div><a class="xref" href="Microsoft.DocAsCode.EntityModel.YamlModelGenerator.html#Microsoft_DocAsCode_EntityModel_YamlModelGenerator_DefaultVisit_Microsoft_CodeAnalysis_ISymbol_Microsoft_DocAsCode_EntityModel_MetadataItem_Microsoft_DocAsCode_EntityModel_SymbolVisitorAdapter_">DefaultVisit(ISymbol, MetadataItem, SymbolVisitorAdapter)</a></div>
+              <h3 id="operators">Operators
+              </h3>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L57">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator_op_Addition_Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator_Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.op_Addition(Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator%2CMicrosoft.DocAsCode.EntityModel.SimpleYamlModelGenerator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/dev/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L57">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator_op_Addition_Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator_Microsoft_DocAsCode_EntityModel_SimpleYamlModelGenerator_" data-uid="Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator.op_Addition(Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator,Microsoft.DocAsCode.EntityModel.SimpleYamlModelGenerator)">Addition(CompositeYamlModelGenerator, SimpleYamlModelGenerator)</h4>
               <div class="markdown level1 summary"></div>
@@ -225,6 +298,14 @@
           
           <div class="hidden-sm col-md-2" role="complementary">
             <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <ul class="level1 btn nav bs-docs-sidenav">
+                <li>
+                  <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_EntityModel_CompositeYamlModelGenerator.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.EntityModel.CompositeYamlModelGenerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary mobile-hide">Improve this Doc</a>
+                </li>
+                <li>
+                  <a href="https://github.com/hellosnow/docfx/blob/dev/src/Microsoft.DocAsCode.EntityModel/Visitors/CompositeYamlModelGenerator.cs/#L11" class="btn btn-primary mobile-hide">View Source</a>
+                </li>
+              </ul>
             <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
             </nav>
           </div>
@@ -238,7 +319,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>
@@ -246,6 +328,7 @@
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>

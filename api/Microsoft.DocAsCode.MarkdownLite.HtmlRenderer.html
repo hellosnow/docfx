@@ -1,13 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class HtmlRenderer | docfx website</title>
+    <title>Class HtmlRenderer
+   | DocFX website </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class HtmlRenderer | docfx website">
+    <meta name="title" content="Class HtmlRenderer
+   | DocFX website ">
+    <meta name="generator" content="docfx 1.0.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -15,6 +18,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
   </head>
   <body data-spy="scroll" data-target="#affix">
     <div id="wrapper">
@@ -29,17 +33,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../">
+              <a class="navbar-brand" href="../index.html">
                 <img id="logo" class="svg" src="../logo.svg" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
             </div>
           </div>
         </nav>
         
         <div class="subnav navbar navbar-default">
-          <div class="container" id="breadcrumb">
+          <div class="container hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
@@ -48,7 +57,15 @@
       </header>
       <div role="main" class="container body-content">
         
-        <div class="sidenav">
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
           <div class="sidetoggle collapse" id="sidetoggle">
             <div id="sidetoc"></div>
@@ -59,15 +76,39 @@
             <article class="content wrap" id="_content">
               
               
-              <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L13" class="btn btn-primary pull-right mobile-hide">View Source</a>
-              <h1 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer">Class HtmlRenderer</h1>
+              <h1 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer">Class HtmlRenderer
+              </h1>
               <div class="markdown level0 summary"><p>The html renderer for gfm.</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
-                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level0"><a class="xref" href="https://msdn.microsoft.com/en-us/library/system.object(v=vs.110).aspx">Object</a></div>
                   <div class="level1"><span class="xref">HtmlRenderer</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/7bxwbwt2(v=vs.110).aspx">Object.ToString()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/bsc2ak47(v=vs.110).aspx">Object.Equals(Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/w4hkze5k(v=vs.110).aspx">Object.Equals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/hz2a0b8x(v=vs.110).aspx">Object.ReferenceEquals(Object, Object)</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/zdee4b3y(v=vs.110).aspx">Object.GetHashCode()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/dfwy45w9(v=vs.110).aspx">Object.GetType()</a>
+                </div>
+                <div>
+                  <a class="xref" href="https://msdn.microsoft.com/en-us/library/57ctke0a(v=vs.110).aspx">Object.MemberwiseClone()</a>
+                </div>
               </div>
               <h6><strong>Namespace</strong>:Microsoft.DocAsCode.MarkdownLite</h6>
               <h6><strong>Assembly</strong>:Microsoft.DocAsCode.MarkdownLite.dll</h6>
@@ -75,17 +116,21 @@
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public class HtmlRenderer</code></pre>
               </div>
-              <h3 id="methods">Methods</h3>
-              
+              <h3 id="methods">Methods
+              </h3>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L157">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_AppendSourceInfo_Microsoft_DocAsCode_MarkdownLite_StringBuffer_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_IMarkdownToken_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.AppendSourceInfo(Microsoft.DocAsCode.MarkdownLite.StringBuffer%2CMicrosoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.IMarkdownToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
-              <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_ApplyInline_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_StringBuffer_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.ApplyInline(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.StringBuffer,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">ApplyInline(IMarkdownRenderer, StringBuffer, MarkdownBlockContext)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L363">View Source</a>
+              </span>
+              <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_AppendSourceInfo_Microsoft_DocAsCode_MarkdownLite_StringBuffer_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_IMarkdownToken_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.AppendSourceInfo(Microsoft.DocAsCode.MarkdownLite.StringBuffer,Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.IMarkdownToken)">AppendSourceInfo(StringBuffer, IMarkdownRenderer, IMarkdownToken)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected virtual StringBuffer ApplyInline(IMarkdownRenderer engine, StringBuffer content, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">protected static StringBuffer AppendSourceInfo(StringBuffer result, IMarkdownRenderer renderer, IMarkdownToken token)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -98,18 +143,18 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.StringBuffer.html#Microsoft_DocAsCode_MarkdownLite_StringBuffer">StringBuffer</a></td>
-                    <td><em>content</em></td>
+                    <td><em>result</em></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext.html#Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext">MarkdownBlockContext</a></td>
-                    <td><em>context</em></td>
+                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
+                    <td><em>renderer</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownToken.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownToken">IMarkdownToken</a></td>
+                    <td><em>token</em></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -129,16 +174,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L346">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_GfmDelInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.GfmDelInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L300">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_GfmDelInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.GfmDelInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, GfmDelInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, GfmDelInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, GfmDelInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -152,7 +200,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -182,9 +230,68 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L74">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_GfmEmojiInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.GfmEmojiInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L329">View Source</a>
+              </span>
+              <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_GfmEmojiInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.GfmEmojiInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, GfmEmojiInlineToken, MarkdownInlineContext)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, GfmEmojiInlineToken token, MarkdownInlineContext context)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
+                    <td><em>renderer</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.GfmEmojiInlineToken.html#Microsoft_DocAsCode_MarkdownLite_GfmEmojiInlineToken">GfmEmojiInlineToken</a></td>
+                    <td><em>token</em></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext.html#Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext">MarkdownInlineContext</a></td>
+                    <td><em>context</em></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.StringBuffer.html#Microsoft_DocAsCode_MarkdownLite_StringBuffer">StringBuffer</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockquoteBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockquoteBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L75">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockquoteBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockquoteBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownBlockquoteBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
@@ -235,16 +342,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L370">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownBrInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBrInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L324">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownBrInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownBrInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownBrInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownBrInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownBrInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -258,7 +368,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -288,16 +398,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L23">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownCodeBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownCodeBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L22">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownCodeBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownCodeBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownCodeBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownCodeBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownCodeBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -311,7 +424,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -341,16 +454,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L341">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownCodeInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownCodeInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L295">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownCodeInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownCodeInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownCodeInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownCodeInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownCodeInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -364,7 +480,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -394,16 +510,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L330">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownEmInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownEmInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L284">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownEmInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownEmInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownEmInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownEmInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownEmInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -417,7 +536,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -447,16 +566,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L265">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownEscapeInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownEscapeInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L217">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownEscapeInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownEscapeInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownEscapeInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownEscapeInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownEscapeInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -470,7 +592,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -500,16 +622,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L50">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownHeadingBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownHeadingBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L50">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownHeadingBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownHeadingBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownHeadingBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownHeadingBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownHeadingBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -523,7 +648,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -553,16 +678,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L69">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownHrBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownHrBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L70">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownHrBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownHrBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownHrBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownHrBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownHrBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -576,7 +704,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -606,16 +734,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L167">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownHtmlBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownHtmlBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L113">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownHtmlBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownHtmlBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownHtmlBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownHtmlBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownHtmlBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -629,7 +760,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -659,16 +790,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L384">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownIgnoreToken_Microsoft_DocAsCode_MarkdownLite_IMarkdownContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownIgnoreToken%2CMicrosoft.DocAsCode.MarkdownLite.IMarkdownContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L349">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownIgnoreToken_Microsoft_DocAsCode_MarkdownLite_IMarkdownContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownIgnoreToken,Microsoft.DocAsCode.MarkdownLite.IMarkdownContext)">Render(IMarkdownRenderer, MarkdownIgnoreToken, IMarkdownContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownIgnoreToken token, IMarkdownContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownIgnoreToken token, IMarkdownContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -682,7 +816,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -712,16 +846,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L307">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownImageInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownImageInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L260">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownImageInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownImageInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownImageInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownImageInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownImageInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -735,7 +872,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -765,16 +902,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L270">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownLinkInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownLinkInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L222">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownLinkInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownLinkInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownLinkInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownLinkInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownLinkInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -788,7 +928,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -818,16 +958,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L84">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownListBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownListBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L87">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownListBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownListBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownListBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownListBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownListBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -841,7 +984,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -871,16 +1014,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L97">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownListItemBlockToken_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownListItemBlockToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
-              <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownListItemBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownListItemBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownListItemBlockToken, MarkdownBlockContext)</h4>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L101">View Source</a>
+              </span>
+              <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownListItemBlockToken_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownListItemBlockToken)">Render(IMarkdownRenderer, MarkdownListItemBlockToken)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownListItemBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">protected virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownListItemBlockToken token)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -902,11 +1048,6 @@
                     <td><em>token</em></td>
                     <td></td>
                   </tr>
-                  <tr>
-                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext.html#Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext">MarkdownBlockContext</a></td>
-                    <td><em>context</em></td>
-                    <td></td>
-                  </tr>
                 </tbody>
               </table>
               <h5 class="returns">Returns</h5>
@@ -924,16 +1065,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L17">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownNewLineBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownNewLineBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L16">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownNewLineBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownNewLineBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownNewLineBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownNewLineBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownNewLineBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -947,7 +1091,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -977,9 +1121,12 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L251">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownNonParagraphBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownNonParagraphBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L203">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownNonParagraphBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownNonParagraphBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownNonParagraphBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
@@ -1030,16 +1177,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L177">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownParagraphBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownParagraphBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L123">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownParagraphBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownParagraphBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownParagraphBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownParagraphBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownParagraphBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1053,7 +1203,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -1083,16 +1233,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L389">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownRawToken_Microsoft_DocAsCode_MarkdownLite_IMarkdownContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownRawToken%2CMicrosoft.DocAsCode.MarkdownLite.IMarkdownContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L354">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownRawToken_Microsoft_DocAsCode_MarkdownLite_IMarkdownContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownRawToken,Microsoft.DocAsCode.MarkdownLite.IMarkdownContext)">Render(IMarkdownRenderer, MarkdownRawToken, IMarkdownContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownRawToken token, IMarkdownContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownRawToken token, IMarkdownContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1106,7 +1259,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -1136,16 +1289,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L319">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownStrongInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownStrongInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L273">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownStrongInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownStrongInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownStrongInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownStrongInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownStrongInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1159,7 +1315,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -1189,16 +1345,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L196">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTableBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownTableBlockToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L146">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTableBlockToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownTableBlockToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownTableBlockToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownTableBlockToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownTableBlockToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1212,7 +1371,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -1242,16 +1401,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L357">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTagInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownTagInlineToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L311">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTagInlineToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownTagInlineToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownTagInlineToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownTagInlineToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownTagInlineToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1265,7 +1427,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -1295,16 +1457,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L188">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTextToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownTextToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownBlockContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L136">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTextToken_Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownTextToken,Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext)">Render(IMarkdownRenderer, MarkdownTextToken, MarkdownBlockContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownTextToken token, MarkdownBlockContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownTextToken token, MarkdownBlockContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1318,7 +1483,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -1348,16 +1513,19 @@
                   </tr>
                 </tbody>
               </table>
-              
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L375">View Source</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTextToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownTextToken%2CMicrosoft.DocAsCode.MarkdownLite.MarkdownInlineContext)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L340">View Source</a>
               </span>
               <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_Render_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_Microsoft_DocAsCode_MarkdownLite_MarkdownTextToken_Microsoft_DocAsCode_MarkdownLite_MarkdownInlineContext_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.Render(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,Microsoft.DocAsCode.MarkdownLite.MarkdownTextToken,Microsoft.DocAsCode.MarkdownLite.MarkdownInlineContext)">Render(IMarkdownRenderer, MarkdownTextToken, MarkdownInlineContext)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer engine, MarkdownTextToken token, MarkdownInlineContext context)</code></pre>
+                <pre><code class="lang-csharp hljs">public virtual StringBuffer Render(IMarkdownRenderer renderer, MarkdownTextToken token, MarkdownInlineContext context)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -1371,7 +1539,7 @@
                 <tbody>
                   <tr>
                     <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
+                    <td><em>renderer</em></td>
                     <td></td>
                   </tr>
                   <tr>
@@ -1401,74 +1569,23 @@
                   </tr>
                 </tbody>
               </table>
-              
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/dotnet/docfx/blob/master/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L107">View Source</a>
-              </span>
-              <h4 id="Microsoft_DocAsCode_MarkdownLite_HtmlRenderer_RenderTokens_Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer_System_Collections_Immutable_ImmutableArray_Microsoft_DocAsCode_MarkdownLite_IMarkdownToken__Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext_System_Boolean_Microsoft_DocAsCode_MarkdownLite_IMarkdownRule_" data-uid="Microsoft.DocAsCode.MarkdownLite.HtmlRenderer.RenderTokens(Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer,System.Collections.Immutable.ImmutableArray{Microsoft.DocAsCode.MarkdownLite.IMarkdownToken},Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext,System.Boolean,Microsoft.DocAsCode.MarkdownLite.IMarkdownRule)">RenderTokens(IMarkdownRenderer, ImmutableArray&lt;IMarkdownToken&gt;, MarkdownBlockContext, Boolean, IMarkdownRule)</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">protected StringBuffer RenderTokens(IMarkdownRenderer engine, ImmutableArray&lt;IMarkdownToken&gt; tokens, MarkdownBlockContext context, bool wrapParagraph = false, IMarkdownRule rule = null)</code></pre>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="Microsoft.DocAsCode.Common.JsonUtility.html#Microsoft_DocAsCode_Common_JsonUtility_ToJsonString_System_Object_Newtonsoft_Json_Formatting_Newtonsoft_Json_JsonSerializer_">JsonUtility.ToJsonString(Formatting, JsonSerializer)</a>
               </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRenderer.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRenderer">IMarkdownRenderer</a></td>
-                    <td><em>engine</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">System.Collections.Immutable.ImmutableArray</span>&lt;<a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownToken.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownToken">IMarkdownToken</a>&gt;</td>
-                    <td><em>tokens</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.MarkdownBlockContext.html#Microsoft_DocAsCode_MarkdownLite_MarkdownBlockContext">MarkdownBlockContext</a></td>
-                    <td><em>context</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><span class="xref">System.Boolean</span></td>
-                    <td><em>wrapParagraph</em></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.IMarkdownRule.html#Microsoft_DocAsCode_MarkdownLite_IMarkdownRule">IMarkdownRule</a></td>
-                    <td><em>rule</em></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a class="xref" href="Microsoft.DocAsCode.MarkdownLite.StringBuffer.html#Microsoft_DocAsCode_MarkdownLite_StringBuffer">StringBuffer</a></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
             </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <ul class="level1 btn nav bs-docs-sidenav">
+                <li>
+                  <a href="https://github.com/hellosnow/docfx/new/dev/Documentation/apispec/new?filename=Microsoft_DocAsCode_MarkdownLite_HtmlRenderer.md&amp;value=---%0Auid%3A%20Microsoft.DocAsCode.MarkdownLite.HtmlRenderer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="btn btn-primary mobile-hide">Improve this Doc</a>
+                </li>
+                <li>
+                  <a href="https://github.com/hellosnow/docfx/blob/bottonRight/src/Microsoft.DocAsCode.MarkdownLite/HtmlRenderer.cs/#L12" class="btn btn-primary mobile-hide">View Source</a>
+                </li>
+              </ul>
             <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
             </nav>
           </div>
@@ -1482,7 +1599,8 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            <span>Copyright © 2015 Microsoft<br>Powered by Doc-as-Code</span>
+            
+            <span>Copyright © 2015-2016 Microsoft<br>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>
@@ -1490,6 +1608,7 @@
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
