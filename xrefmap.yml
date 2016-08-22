@@ -1558,13 +1558,13 @@ references:
   href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuilder.html#Microsoft_DocAsCode_Build_Engine_DocumentBuilder
   commentId: T:Microsoft.DocAsCode.Build.Engine.DocumentBuilder
   fullName: Microsoft.DocAsCode.Build.Engine.DocumentBuilder
-- uid: Microsoft.DocAsCode.Build.Engine.DocumentBuilder.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Collections.Immutable.ImmutableArray{System.String},System.String)
-  name: DocumentBuilder(IEnumerable<Assembly>, ImmutableArray<String>, String)
-  href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuilder.html#Microsoft_DocAsCode_Build_Engine_DocumentBuilder__ctor_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__System_Collections_Immutable_ImmutableArray_System_String__System_String_
-  commentId: M:Microsoft.DocAsCode.Build.Engine.DocumentBuilder.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Collections.Immutable.ImmutableArray{System.String},System.String)
-  name.vb: DocumentBuilder(IEnumerable(Of Assembly), ImmutableArray(Of String), String)
-  fullName: Microsoft.DocAsCode.Build.Engine.DocumentBuilder.DocumentBuilder(System.Collections.Generic.IEnumerable<System.Reflection.Assembly>, System.Collections.Immutable.ImmutableArray<System.String>, System.String)
-  fullName.vb: Microsoft.DocAsCode.Build.Engine.DocumentBuilder.DocumentBuilder(System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly), System.Collections.Immutable.ImmutableArray(Of System.String), System.String)
+- uid: Microsoft.DocAsCode.Build.Engine.DocumentBuilder.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Collections.Immutable.ImmutableArray{System.String},System.String,System.String)
+  name: DocumentBuilder(IEnumerable<Assembly>, ImmutableArray<String>, String, String)
+  href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuilder.html#Microsoft_DocAsCode_Build_Engine_DocumentBuilder__ctor_System_Collections_Generic_IEnumerable_System_Reflection_Assembly__System_Collections_Immutable_ImmutableArray_System_String__System_String_System_String_
+  commentId: M:Microsoft.DocAsCode.Build.Engine.DocumentBuilder.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Collections.Immutable.ImmutableArray{System.String},System.String,System.String)
+  name.vb: DocumentBuilder(IEnumerable(Of Assembly), ImmutableArray(Of String), String, String)
+  fullName: Microsoft.DocAsCode.Build.Engine.DocumentBuilder.DocumentBuilder(System.Collections.Generic.IEnumerable<System.Reflection.Assembly>, System.Collections.Immutable.ImmutableArray<System.String>, System.String, System.String)
+  fullName.vb: Microsoft.DocAsCode.Build.Engine.DocumentBuilder.DocumentBuilder(System.Collections.Generic.IEnumerable(Of System.Reflection.Assembly), System.Collections.Immutable.ImmutableArray(Of System.String), System.String, System.String)
 - uid: Microsoft.DocAsCode.Build.Engine.DocumentBuilder.Build(Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters)
   name: Build(DocumentBuildParameters)
   href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuilder.html#Microsoft_DocAsCode_Build_Engine_DocumentBuilder_Build_Microsoft_DocAsCode_Build_Engine_DocumentBuildParameters_
@@ -1592,11 +1592,11 @@ references:
   href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.html#Microsoft_DocAsCode_Build_Engine_DocumentBuildParameters_ApplyTemplateSettings
   commentId: P:Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.ApplyTemplateSettings
   fullName: Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.ApplyTemplateSettings
-- uid: Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.ChangeList
-  name: ChangeList
-  href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.html#Microsoft_DocAsCode_Build_Engine_DocumentBuildParameters_ChangeList
-  commentId: P:Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.ChangeList
-  fullName: Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.ChangeList
+- uid: Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.Changes
+  name: Changes
+  href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.html#Microsoft_DocAsCode_Build_Engine_DocumentBuildParameters_Changes
+  commentId: P:Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.Changes
+  fullName: Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.Changes
 - uid: Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.ExternalReferencePackages
   name: ExternalReferencePackages
   href: api/Microsoft.DocAsCode.Build.Engine.DocumentBuildParameters.html#Microsoft_DocAsCode_Build_Engine_DocumentBuildParameters_ExternalReferencePackages
@@ -2261,6 +2261,11 @@ references:
   href: api/Microsoft.DocAsCode.Build.Engine.TemplateManager.html#Microsoft_DocAsCode_Build_Engine_TemplateManager_GetTemplateProcessor_Microsoft_DocAsCode_Build_Engine_DocumentBuildContext_System_Int32_
   commentId: M:Microsoft.DocAsCode.Build.Engine.TemplateManager.GetTemplateProcessor(Microsoft.DocAsCode.Build.Engine.DocumentBuildContext,System.Int32)
   fullName: Microsoft.DocAsCode.Build.Engine.TemplateManager.GetTemplateProcessor(Microsoft.DocAsCode.Build.Engine.DocumentBuildContext, System.Int32)
+- uid: Microsoft.DocAsCode.Build.Engine.TemplateManager.GetTemplatesHash
+  name: GetTemplatesHash()
+  href: api/Microsoft.DocAsCode.Build.Engine.TemplateManager.html#Microsoft_DocAsCode_Build_Engine_TemplateManager_GetTemplatesHash
+  commentId: M:Microsoft.DocAsCode.Build.Engine.TemplateManager.GetTemplatesHash
+  fullName: Microsoft.DocAsCode.Build.Engine.TemplateManager.GetTemplatesHash()
 - uid: Microsoft.DocAsCode.Build.Engine.TemplateManager.ProcessTheme(System.String,System.Boolean)
   name: ProcessTheme(String, Boolean)
   href: api/Microsoft.DocAsCode.Build.Engine.TemplateManager.html#Microsoft_DocAsCode_Build_Engine_TemplateManager_ProcessTheme_System_String_System_Boolean_
@@ -2778,11 +2783,6 @@ references:
   href: api/Microsoft.DocAsCode.Build.Incrementals.BuildInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildInfo_BuildStartTime
   commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildInfo.BuildStartTime
   fullName: Microsoft.DocAsCode.Build.Incrementals.BuildInfo.BuildStartTime
-- uid: Microsoft.DocAsCode.Build.Incrementals.BuildInfo.ConfigHash
-  name: ConfigHash
-  href: api/Microsoft.DocAsCode.Build.Incrementals.BuildInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildInfo_ConfigHash
-  commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildInfo.ConfigHash
-  fullName: Microsoft.DocAsCode.Build.Incrementals.BuildInfo.ConfigHash
 - uid: Microsoft.DocAsCode.Build.Incrementals.BuildInfo.DocfxVersion
   name: DocfxVersion
   href: api/Microsoft.DocAsCode.Build.Incrementals.BuildInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildInfo_DocfxVersion
@@ -2853,11 +2853,21 @@ references:
   href: api/Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildVersionInfo_Attributes
   commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Attributes
   fullName: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Attributes
+- uid: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.ConfigHash
+  name: ConfigHash
+  href: api/Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildVersionInfo_ConfigHash
+  commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.ConfigHash
+  fullName: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.ConfigHash
 - uid: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Dependency
   name: Dependency
   href: api/Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildVersionInfo_Dependency
   commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Dependency
   fullName: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Dependency
+- uid: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Manifest
+  name: Manifest
+  href: api/Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildVersionInfo_Manifest
+  commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Manifest
+  fullName: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Manifest
 - uid: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.Output
   name: Output
   href: api/Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildVersionInfo_Output
@@ -2873,6 +2883,11 @@ references:
   href: api/Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildVersionInfo_VersionName
   commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.VersionName
   fullName: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.VersionName
+- uid: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.XRefSpecMap
+  name: XRefSpecMap
+  href: api/Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.html#Microsoft_DocAsCode_Build_Incrementals_BuildVersionInfo_XRefSpecMap
+  commentId: P:Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.XRefSpecMap
+  fullName: Microsoft.DocAsCode.Build.Incrementals.BuildVersionInfo.XRefSpecMap
 - uid: Microsoft.DocAsCode.Build.Incrementals.ChangeItem
   name: ChangeItem
   href: api/Microsoft.DocAsCode.Build.Incrementals.ChangeItem.html#Microsoft_DocAsCode_Build_Incrementals_ChangeItem
@@ -2999,6 +3014,11 @@ references:
   href: api/Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.html#Microsoft_DocAsCode_Build_Incrementals_DependencyGraph_GetAllDependency_System_String_
   commentId: M:Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.GetAllDependency(System.String)
   fullName: Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.GetAllDependency(System.String)
+- uid: Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.GetDirectDependency(System.String)
+  name: GetDirectDependency(String)
+  href: api/Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.html#Microsoft_DocAsCode_Build_Incrementals_DependencyGraph_GetDirectDependency_System_String_
+  commentId: M:Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.GetDirectDependency(System.String)
+  fullName: Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.GetDirectDependency(System.String)
 - uid: Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.HasDependency(System.String)
   name: HasDependency(String)
   href: api/Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.html#Microsoft_DocAsCode_Build_Incrementals_DependencyGraph_HasDependency_System_String_
@@ -3031,6 +3051,46 @@ references:
   href: api/Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.html#Microsoft_DocAsCode_Build_Incrementals_DependencyGraph_Save_System_IO_TextWriter_
   commentId: M:Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.Save(System.IO.TextWriter)
   fullName: Microsoft.DocAsCode.Build.Incrementals.DependencyGraph.Save(System.IO.TextWriter)
+- uid: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem
+  name: FileAttributeItem
+  href: api/Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.html#Microsoft_DocAsCode_Build_Incrementals_FileAttributeItem
+  commentId: T:Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem
+  fullName: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem
+- uid: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.File
+  name: File
+  href: api/Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.html#Microsoft_DocAsCode_Build_Incrementals_FileAttributeItem_File
+  commentId: P:Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.File
+  fullName: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.File
+- uid: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.LastModifiedTime
+  name: LastModifiedTime
+  href: api/Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.html#Microsoft_DocAsCode_Build_Incrementals_FileAttributeItem_LastModifiedTime
+  commentId: P:Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.LastModifiedTime
+  fullName: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.LastModifiedTime
+- uid: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.MD5
+  name: MD5
+  href: api/Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.html#Microsoft_DocAsCode_Build_Incrementals_FileAttributeItem_MD5
+  commentId: P:Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.MD5
+  fullName: Microsoft.DocAsCode.Build.Incrementals.FileAttributeItem.MD5
+- uid: Microsoft.DocAsCode.Build.Incrementals.FileAttributes
+  name: FileAttributes
+  href: api/Microsoft.DocAsCode.Build.Incrementals.FileAttributes.html#Microsoft_DocAsCode_Build_Incrementals_FileAttributes
+  commentId: T:Microsoft.DocAsCode.Build.Incrementals.FileAttributes
+  fullName: Microsoft.DocAsCode.Build.Incrementals.FileAttributes
+- uid: Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckAttribute
+  name: IncrementalCheckAttribute
+  href: api/Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckAttribute.html#Microsoft_DocAsCode_Build_Incrementals_IncrementalCheckAttribute
+  commentId: T:Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckAttribute
+  fullName: Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckAttribute
+- uid: Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver
+  name: IncrementalCheckPropertiesResolver
+  href: api/Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver.html#Microsoft_DocAsCode_Build_Incrementals_IncrementalCheckPropertiesResolver
+  commentId: T:Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver
+  fullName: Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver
+- uid: Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver.CreateProperty(System.Reflection.MemberInfo,Newtonsoft.Json.MemberSerialization)
+  name: CreateProperty(MemberInfo, MemberSerialization)
+  href: api/Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver.html#Microsoft_DocAsCode_Build_Incrementals_IncrementalCheckPropertiesResolver_CreateProperty_System_Reflection_MemberInfo_Newtonsoft_Json_MemberSerialization_
+  commentId: M:Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver.CreateProperty(System.Reflection.MemberInfo,Newtonsoft.Json.MemberSerialization)
+  fullName: Microsoft.DocAsCode.Build.Incrementals.IncrementalCheckPropertiesResolver.CreateProperty(System.Reflection.MemberInfo, Newtonsoft.Json.MemberSerialization)
 - uid: Microsoft.DocAsCode.Build.Incrementals.ProcessorInfo
   name: ProcessorInfo
   href: api/Microsoft.DocAsCode.Build.Incrementals.ProcessorInfo.html#Microsoft_DocAsCode_Build_Incrementals_ProcessorInfo
@@ -4446,6 +4506,11 @@ references:
   href: api/Microsoft.DocAsCode.BuildJsonConfig.html#Microsoft_DocAsCode_BuildJsonConfig_BaseDirectory
   commentId: P:Microsoft.DocAsCode.BuildJsonConfig.BaseDirectory
   fullName: Microsoft.DocAsCode.BuildJsonConfig.BaseDirectory
+- uid: Microsoft.DocAsCode.BuildJsonConfig.ChangesFile
+  name: ChangesFile
+  href: api/Microsoft.DocAsCode.BuildJsonConfig.html#Microsoft_DocAsCode_BuildJsonConfig_ChangesFile
+  commentId: P:Microsoft.DocAsCode.BuildJsonConfig.ChangesFile
+  fullName: Microsoft.DocAsCode.BuildJsonConfig.ChangesFile
 - uid: Microsoft.DocAsCode.BuildJsonConfig.Content
   name: Content
   href: api/Microsoft.DocAsCode.BuildJsonConfig.html#Microsoft_DocAsCode_BuildJsonConfig_Content
@@ -5871,6 +5936,11 @@ references:
   href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_Href
   commentId: P:Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.Href
   fullName: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.Href
+- uid: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.IsHrefUpdated
+  name: IsHrefUpdated
+  href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_IsHrefUpdated
+  commentId: P:Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.IsHrefUpdated
+  fullName: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.IsHrefUpdated
 - uid: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.Items
   name: Items
   href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_Items
@@ -5896,6 +5966,26 @@ references:
   href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_NameInDevLangs
   commentId: P:Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.NameInDevLangs
   fullName: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.NameInDevLangs
+- uid: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalHomepage
+  name: OriginalHomepage
+  href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_OriginalHomepage
+  commentId: P:Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalHomepage
+  fullName: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalHomepage
+- uid: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalHref
+  name: OriginalHref
+  href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_OriginalHref
+  commentId: P:Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalHref
+  fullName: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalHref
+- uid: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalTocHref
+  name: OriginalTocHref
+  href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_OriginalTocHref
+  commentId: P:Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalTocHref
+  fullName: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalTocHref
+- uid: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalTopicHref
+  name: OriginalTopicHref
+  href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_OriginalTopicHref
+  commentId: P:Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalTopicHref
+  fullName: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.OriginalTopicHref
 - uid: Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.TocHref
   name: TocHref
   href: api/Microsoft.DocAsCode.DataContracts.Common.TocItemViewModel.html#Microsoft_DocAsCode_DataContracts_Common_TocItemViewModel_TocHref
@@ -16276,6 +16366,11 @@ references:
   href: api/Microsoft.DocAsCode.Utility.StringExtension.html#Microsoft_DocAsCode_Utility_StringExtension_ForwardSlashCombine_System_String_System_String_
   commentId: M:Microsoft.DocAsCode.Utility.StringExtension.ForwardSlashCombine(System.String,System.String)
   fullName: Microsoft.DocAsCode.Utility.StringExtension.ForwardSlashCombine(System.String, System.String)
+- uid: Microsoft.DocAsCode.Utility.StringExtension.GetMd5String(System.String)
+  name: GetMd5String(String)
+  href: api/Microsoft.DocAsCode.Utility.StringExtension.html#Microsoft_DocAsCode_Utility_StringExtension_GetMd5String_System_String_
+  commentId: M:Microsoft.DocAsCode.Utility.StringExtension.GetMd5String(System.String)
+  fullName: Microsoft.DocAsCode.Utility.StringExtension.GetMd5String(System.String)
 - uid: Microsoft.DocAsCode.Utility.StringExtension.GetNormalizedFullPathKey(System.Collections.Generic.IEnumerable{System.String})
   name: GetNormalizedFullPathKey(IEnumerable<String>)
   href: api/Microsoft.DocAsCode.Utility.StringExtension.html#Microsoft_DocAsCode_Utility_StringExtension_GetNormalizedFullPathKey_System_Collections_Generic_IEnumerable_System_String__

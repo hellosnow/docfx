@@ -566,13 +566,22 @@ body .toc{
 .article img {
   max-width: 100%;
 }
-.affix {
+.sideaffix {
+  margin-top: 50px; 
   font-size: 12px;
   max-height: 100%;
   overflow: hidden;
-  margin-top: 50px; /* Add margin-top for '.affix' instead of '.affix h5' */
   top: 100px;
   bottom: 10px;
+  position: fixed;
+}
+.sideaffix > div.contribution > ul > li > a.contribution-link {
+  padding: 7px 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.sideaffix > div.contribution > ul > li > a:hover {
+  background-color: #ffffff;
 }
 .affix h5 {
   font-weight: bold;
@@ -582,19 +591,10 @@ body .toc{
 }
 .affix > ul.level1 {
   overflow-x: hidden;
-  overflow-y: -20px;
+  overflow-y: hidden;
   padding-bottom: 10px;
-  height: calc(100% - 100px);
+  height: calc(100% - 20px); /* minus the height of 'in this article'. */
   margin-right: -20px;
-}
-/* overwrite height and margin-right of '.affix > ul.level1' */
-.affix > ul.level1.btn {
-  height: auto;
-  margin-right:auto;
-}
-/* add padding for multiple buttons */
-.affix > ul.level1.btn > li {
-  padding-bottom: 10px;
 }
 .affix ul > li > a:before {
   color: #cccccc;
@@ -641,22 +641,6 @@ body .toc{
 .affix ul > li > a:hover:before {
   display: block;
   white-space: nowrap;
-}
-/* overwrite the button color of '.affix ul > li > a' */
-.affix ul > li > a.btn {
-  color: #8BFEB4;
-}
-/* overwrite the button display of '.affix ul > li > a:hover:before' */
-.affix ul > li > a.btn:hover:before {
-  display: none;
-}
-/* overwrite the button background color of '.affix ul > li > a:hover' */
-.affix ul > li > a.btn:hover {
-  background-color: #23527c;
-}
-/* overwrite the button shadow of '.btn.active' */
-.affix ul.btn:active {
-  box-shadow: none;
 }
 .codewrapper {
   position: relative;

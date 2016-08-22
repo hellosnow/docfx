@@ -134,6 +134,13 @@ For detailed description about DFM, please refer to <a href="../spec/docfx_flavo
 <p><em>Step6.</em> <code>docfx docfx_project\docfx.json --serve</code> to build your project and preview your site at <a href="http://localhost:8080">http://localhost:8080</a>.</p>
 <p>Please refer to <a href="docfx.exe_user_manual.html"><em>DocFX</em> User Manual</a> for detailed description of <code>docfx.json</code>.</p>
 <h2 id="5-build-from-source-code">5. Build from source code</h2>
+<h4 id="build-without-dnx">Build without DNX</h4>
+<p>There&#39;re two options:</p>
+<ol>
+<li>Run <code>build nondnx</code> under <em>DocFX</em> code repo</li>
+<li>Open <code>NonDNX.sln</code> under <em>DocFX</em> code repo in Visual Studio and build it.</li>
+</ol>
+<h4 id="build-with-dnx">Build with DNX</h4>
 <p>As a prerequisite, you need:</p>
 <ul>
 <li><a href="https://www.microsoft.com/en-us/download/details.aspx?id=48159">Microsoft Build Tools 2015</a></li>
@@ -173,14 +180,18 @@ A: In the generated website, hit F12 to view source, and look at the title of an
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
-            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <ul class="level1 btn nav bs-docs-sidenav">
-                <li>
-                  <a href="https://github.com/hellosnow/docfx/blob/dev/Documentation/tutorial/docfx_getting_started.md/#L1" class="btn btn-primary mobile-hide">Improve this Doc</a>
-                </li>
-              </ul>
-            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-            </nav>
+            <div class="sideaffix">
+              <div class="contribution" id="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/hellosnow/docfx/blob/dev/Documentation/tutorial/docfx_getting_started.md/#L1" class="contribution-link mobile-hide">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
           </div>
         </div>
       </div>
