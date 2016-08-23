@@ -575,8 +575,15 @@ body .toc{
   bottom: 10px;
   position: fixed;
 }
+.affix {
+  position: relative;
+  height: 100%;
+}
+.sideaffix > div.contribution {
+  margin-bottom: 10px;
+}
 .sideaffix > div.contribution > ul > li > a.contribution-link {
-  padding: 7px 10px;
+  padding: 6px 10px;
   font-weight: bold;
   font-size: 14px;
 }
@@ -590,10 +597,9 @@ body .toc{
   font-size: 12px;
 }
 .affix > ul.level1 {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: hidden;
   padding-bottom: 10px;
-  height: calc(100% - 20px); /* minus the height of 'in this article'. */
+  height: calc(100% - 28px); /* minus the height and margin of 'in this article'. */
   margin-right: -20px;
 }
 .affix ul > li > a:before {
