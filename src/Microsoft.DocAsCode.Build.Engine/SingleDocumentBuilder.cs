@@ -636,14 +636,6 @@ namespace Microsoft.DocAsCode.Build.Engine
 
                 if (canProcessorIncremental)
                 {
-                    // reregister dependency types from last dependency graph
-                    if (dg != null)
-                    {
-                        using (new LoggerPhaseScope("RegisterDependencyTypeFromLastBuild", true))
-                        {
-                            context.DependencyGraph.RegisterDependencyType(dg.DependencyTypes.Values);
-                        }
-                    }
                     ChangeKindWithDependency ck;
                     string fileKey = ((RelativePath)file.File).GetPathFromWorkingFolder().ToString();
                     if (context.ChangeDict.TryGetValue(fileKey, out ck))
@@ -889,9 +881,12 @@ namespace Microsoft.DocAsCode.Build.Engine
                     {
                         foreach (var fileLinkSourceFile in list)
                         {
-                            message = $" Referenced by file: {fileLinkSourceFile.SourceFile} at line: {fileLinkSourceFile.LineNumber}.";
-                            Logger.LogWarning(message);
+                            Logger.LogWarning($"{message} Referenced by file: {fileLinkSourceFile.SourceFile} at line: {fileLinkSourceFile.LineNumber}.");
                         }
+                    }
+                    else
+                    {
+                        Logger.LogWarning(message);
                     }
                 }
             });
@@ -1028,6 +1023,15 @@ namespace Microsoft.DocAsCode.Build.Engine
             var lastManifest = lbvi?.Manifest;
             var lastDependencyGraph = lbvi?.Dependency;
 
+            if (_canIncremental && lastDependencyGraph != null)
+            {
+                // reregister dependency types from last dependency graph
+                using (new LoggerPhaseScope("RegisterDependencyTypeFromLastBuild", true))
+                {
+                    context.DependencyGraph.RegisterDependencyType(lastDependencyGraph.DependencyTypes.Values);
+                }
+            }
+
             foreach (var pair in pairs.AsParallel().WithDegreeOfParallelism(parameters.MaxParallelism))
             {
                 var hostService = new HostService(
@@ -1035,7 +1039,7 @@ namespace Microsoft.DocAsCode.Build.Engine
                        pair.item == null
                             ? new FileModel[0]
                             : from file in pair.item
-                              let canIncremental = _canIncremental ? pair.canProcessorIncremental : _canIncremental
+                              let canIncremental = _canIncremental && pair.canProcessorIncremental
                               select Load(pair.processor, parameters.Metadata, parameters.FileMetadata, file.file, canIncremental, lastXRefSpecMap, lastManifest, lastDependencyGraph, context) into model
                               where model != null
                               select model)
@@ -1073,28 +1077,42 @@ namespace Microsoft.DocAsCode.Build.Engine
                 Logger.LogVerbose($"Processor {processor.Name} cannot suppport incremental build because the following steps don't implement {nameof(ISupportIncrementalBuildStep)} interface: {string.Join(",", processor.BuildSteps.Where(step => !(step is ISupportIncrementalBuildStep)).Select(s => s.Name))}.");
                 return false;
             }
+            if (LastBuildInfo == null)
+            {
+                Logger.LogVerbose($"Processor {processor.Name} disable incremental build because no last build.");
+                return false;
+            }
 
             var cpi = GetProcessorInfo(processor, versionName);
             var lpi = LastBuildInfo
-                ?.Versions
+                .Versions
                 ?.Find(v => v.VersionName == versionName)
                 ?.Processors
                 ?.Find(p => p.Name == processor.Name);
             if (lpi == null)
             {
-                Logger.LogVerbose($"Processor {processor.Name} cannot support incremental build because last build doesn't contain version {versionName}.");
+                Logger.LogVerbose($"Processor {processor.Name} disable incremental build because last build doesn't contain version {versionName}.");
                 return false;
             }
             if (cpi.IncrementalContextHash != lpi.IncrementalContextHash)
             {
-                Logger.LogVerbose($"Processor {processor.Name} cannot support incremental build because incremental context hash changed.");
+                Logger.LogVerbose($"Processor {processor.Name} disable incremental build because incremental context hash changed.");
                 return false;
             }
-            if (!new HashSet<ProcessorStepInfo>(cpi.Steps).SetEquals(lpi.Steps))
+            if (cpi.Steps.Count != lpi.Steps.Count)
             {
-                Logger.LogVerbose($"Processor {processor.Name} cannot support incremental build because steps changed.");
+                Logger.LogVerbose($"Processor {processor.Name} disable incremental build because steps count is different.");
                 return false;
             }
+            for (int i = 0; i < cpi.Steps.Count; i++)
+            {
+                if (object.Equals(cpi.Steps[i], lpi.Steps[i]))
+                {
+                    Logger.LogVerbose($"Processor {processor.Name} disable incremental build because steps changed, from step {lpi.Steps[i].ToJsonString()} to {cpi.Steps[i].ToJsonString()}.");
+                    return false;
+                }
+            }
+            Logger.LogVerbose($"Processor {processor.Name} enable incremental build.");
             return true;
         }
 
