@@ -83,15 +83,16 @@ namespace Microsoft.DocAsCode.Build.Engine
                 {
                     string configHash = ComputeConfigHash(parameters);
                     var fileAttributes = ComputeFileAttributes(parameters);
+                    var baseDir = Path.Combine(IntermediateFolder, CurrentBuildInfo.DirectoryName);
                     _cbv = new BuildVersionInfo
                     {
                         VersionName = parameters.VersionName,
                         ConfigHash = configHash,
-                        AttributesFile = "attributes",
-                        DependencyFile = "dependency",
-                        ManifestFile = "manifest",
-                        XRefSpecMapFile = "xrefspecmap",
-                        BuildMessageFile = "buildmessage",
+                        AttributesFile = IncrementalUtility.CreateRandomFileName(baseDir),
+                        DependencyFile = IncrementalUtility.CreateRandomFileName(baseDir),
+                        ManifestFile = IncrementalUtility.CreateRandomFileName(baseDir),
+                        XRefSpecMapFile = IncrementalUtility.CreateRandomFileName(baseDir),
+                        BuildMessageFile = IncrementalUtility.CreateRandomFileName(baseDir),
                         Attributes = fileAttributes,
                         Dependency = context.DependencyGraph,
                     };
@@ -237,9 +238,10 @@ namespace Microsoft.DocAsCode.Build.Engine
             return true;
         }
 
-        private static IEnumerable<string> ExpandDependency(DependencyGraph dependencyGraph, DocumentBuildContext context, Func<DependencyItem, bool> triggerBuild)
+        private static List<string> ExpandDependency(DependencyGraph dependencyGraph, DocumentBuildContext context, Func<DependencyItem, bool> triggerBuild)
         {
             var changeItems = context.ChangeDict;
+            var newChanges = new List<string>();
 
             if (dependencyGraph != null)
             {
@@ -250,19 +252,20 @@ namespace Microsoft.DocAsCode.Build.Engine
                         if (!changeItems.ContainsKey(from))
                         {
                             changeItems[from] = ChangeKindWithDependency.DependencyUpdated;
-                            yield return from;
+                            newChanges.Add(from);
                         }
                         else
                         {
                             if (changeItems[from] == ChangeKindWithDependency.None)
                             {
-                                yield return from;
+                                newChanges.Add(from);
                             }
                             changeItems[from] |= ChangeKindWithDependency.DependencyUpdated;
                         }
                     }
                 }
             }
+            return newChanges;
         }
 
         private Dictionary<string, FileAttributeItem> ComputeFileAttributes(DocumentBuildParameters parameters)
@@ -414,7 +417,6 @@ namespace Microsoft.DocAsCode.Build.Engine
                 buildSaver = h => h.SaveIntermediateModel();
                 loader = hs =>
                 {
-                    Logger.UnregisterListener(_cbv.BuildMessage.GetListener());
                     UpdateHostServices(hostServices);
                     if (_lbv != null)
                     {
@@ -428,6 +430,7 @@ namespace Microsoft.DocAsCode.Build.Engine
                             }
                         }
                     }
+                    Logger.UnregisterListener(_cbv.BuildMessage.GetListener());
                 };
             }
 
