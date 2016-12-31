@@ -35,6 +35,41 @@ namespace Microsoft.DocAsCode.Tests.Common
             return folder;
         }
 
+        #region IO related
+
+        protected static string CreateFile(string fileName, string[] lines, string baseFolder)
+        {
+            return CreateFile(fileName, string.Join(string.Empty, lines), baseFolder);
+        }
+
+        protected static string CreateFile(string fileName, string content, string baseFolder)
+        {
+            var dir = Path.GetDirectoryName(fileName);
+            dir = CreateDirectory(dir, baseFolder);
+            var file = Path.Combine(baseFolder, fileName);
+            File.WriteAllText(file, content);
+            return file;
+        }
+
+        protected static string UpdateFile(string fileName, string[] lines, string baseFolder)
+        {
+            File.Delete(Path.Combine(baseFolder, fileName));
+            return CreateFile(fileName, lines, baseFolder);
+        }
+
+        protected static string CreateDirectory(string dir, string baseFolder)
+        {
+            if (string.IsNullOrEmpty(dir))
+            {
+                return string.Empty;
+            }
+            var subDirectory = Path.Combine(baseFolder, dir);
+            Directory.CreateDirectory(subDirectory);
+            return subDirectory;
+        }
+
+        #endregion
+
         public virtual void Dispose()
         {
             try
