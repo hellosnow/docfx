@@ -21,17 +21,8 @@ namespace Microsoft.DocAsCode.Build.Engine
 
         public IncrementalPostProcessorHost(IncrementalPostProcessorsContext increContext, string postProcessorName, IImmutableList<SourceFileInfo> sourceFileInfos)
         {
-            if (increContext == null)
-            {
-                throw new ArgumentNullException(nameof(increContext));
-            }
-            if (postProcessorName == null)
-            {
-                throw new ArgumentNullException(nameof(postProcessorName));
-            }
-
-            _increContext = increContext;
-            _postProcessorName = postProcessorName;
+            _increContext = increContext ?? throw new ArgumentNullException(nameof(increContext));
+            _postProcessorName = postProcessorName ?? throw new ArgumentNullException(nameof(postProcessorName));
             SourceFileInfos = sourceFileInfos;
             ShouldTraceIncrementalInfo = _increContext.ShouldTraceIncrementalInfo;
             IsIncremental = _increContext.IsIncremental;
@@ -81,6 +72,12 @@ namespace Microsoft.DocAsCode.Build.Engine
             var tuple = _fal.CreateRandomFile();
             currentPostProcessorInfo.ContextInfoFile = tuple.Item1;
             return tuple.Item2;
+        }
+
+        // TODO: expose in IPostProcessorHost
+        public ChangeList GetChangeList()
+        {
+            return _increContext.GetChangeList();
         }
 
         #endregion

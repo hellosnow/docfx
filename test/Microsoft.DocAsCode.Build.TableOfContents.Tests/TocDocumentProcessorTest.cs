@@ -227,17 +227,15 @@ namespace Microsoft.DocAsCode.Build.TableOfContents.Tests
 #[Topic]({Path.GetFileName(file2)})
 ", FileType.MarkdownToc, "sub");
             var content = $@"
-- name: Topic1
-  href: {file1}
+- name: Demos
+  href: index.yml
   items:
-    - name: Topic1.1
-      href: {file1}
-      homepage: {file2}
-    - name: Topic1.2
-      href: sub/
-      homepage: {file1}
-- name: Topic2
-  href: sub/
+  - name: GitHubBot
+    href: ~/demos/githubbot.md
+  - name: NotBacon
+    href: ~/demos/notbacon.md
+  - name: NotHotdog
+    href: ~/demos/nothotdog.md
 ";
             var toc = _fileCreator.CreateFile(content, FileType.YamlToc);
             FileCollection files = new FileCollection(_inputFolder);

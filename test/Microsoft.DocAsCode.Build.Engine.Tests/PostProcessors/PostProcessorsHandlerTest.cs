@@ -329,6 +329,7 @@ namespace Microsoft.DocAsCode.Build.Engine.Tests
                 Assert.NotNull(host.SourceFileInfos.Single(i => i.SourceRelativePath == "a.md"));
                 Assert.NotNull(host.SourceFileInfos.Single(i => i.SourceRelativePath == "b.md"));
                 Assert.NotNull(host.SourceFileInfos.Single(i => i.SourceRelativePath == "c.md"));
+                var changeList = ((IncrementalPostProcessorHost)host).GetChangeList();
 
                 // Check incremental flag
                 Assert.Equal(3, manifest.Files.Count);

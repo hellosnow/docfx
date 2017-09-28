@@ -64,16 +64,13 @@ namespace Microsoft.DocAsCode.Build.Engine
             {
                 throw new ArgumentNullException(nameof(currentBuildInfo));
             }
-            if (postProcessors == null)
-            {
-                throw new ArgumentNullException(nameof(postProcessors));
-            }
+
             if (maxParallelism <= 0)
             {
                 maxParallelism = Environment.ProcessorCount;
             }
 
-            _postProcessors = postProcessors;
+            _postProcessors = postProcessors ?? throw new ArgumentNullException(nameof(postProcessors));
 
             ShouldTraceIncrementalInfo = GetShouldTraceIncrementalInfo();
             if (ShouldTraceIncrementalInfo)
@@ -88,6 +85,49 @@ namespace Microsoft.DocAsCode.Build.Engine
             EnableIncremental = enableIncremental;
             IsIncremental = GetIsIncremental();
             MaxParallelism = maxParallelism;
+        }
+
+        #endregion
+
+        #region Public methods
+
+        public ChangeList GetChangeList()
+        {
+            if (!ShouldTraceIncrementalInfo)
+            {
+                Logger.LogVerbose("Could not get change list since should not trace incremental information.");
+                return null;
+            }
+
+            // TODO: more strict check
+            var changeList = new ChangeList();
+
+            // TODO: PostProcessOutputs
+            if (LastInfo?.PostProcessOutputs != null)
+            {
+                var created = CurrentInfo.PostProcessOutputs.Keys.Except(LastInfo.PostProcessOutputs.Keys, FilePathComparer.OSPlatformSensitiveStringComparer);
+                foreach (var item in created)
+                {
+                    changeList.Add(item, ChangeKind.Created);
+                }
+
+                var deleted = LastInfo.PostProcessOutputs.Keys.Except(CurrentInfo.PostProcessOutputs.Keys, FilePathComparer.OSPlatformSensitiveStringComparer);
+                foreach (var item in deleted)
+                {
+                    changeList.Add(item, ChangeKind.Deleted);
+                }
+
+                //var intersected = 
+            }
+            else
+            {
+                foreach (var item in CurrentInfo.PostProcessOutputs.Keys)
+                {
+                    changeList.Add(item, ChangeKind.Created);
+                }
+            }
+
+            return changeList;
         }
 
         #endregion

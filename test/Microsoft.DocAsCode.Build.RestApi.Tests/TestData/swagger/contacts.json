@@ -52,7 +52,7 @@
       "parameters": [
         {
           "in": "query",
-          "description": "Specifies the version of the Graph API to target. Beginning with version 1.5, the api-version string is represented in major.minor format. Prior releases were represented as date strings: '2013-11-08' and '2013-04-05'. Required.",
+          "description": "The class to represent a collection of REST reference links.  Example: { self: { href: \"http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1\" } }",
           "name": "api-version",
           "required": true,
           "type": "string",
@@ -117,7 +117,7 @@
         "parameters": [
           {
             "in": "path",
-            "description": "The object ID (GUID) of the target contact.",
+            "description": "The class to represent a collection of REST reference links.  Example: `{ self: { href: \"http://localhost:8080/tfs/DefaultCollection/_apis/wit/workItems/1\" } }`",
             "name": "object_id",
             "required": true,
             "type": "string",
